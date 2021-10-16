@@ -21,4 +21,5 @@ jobs:
       - name: run
         run: | 
           docker run -d --rm --name react tomoya0517/react
-          docker logs react
+          echo "hello"
+          ls 
