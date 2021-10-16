@@ -20,6 +20,5 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: run
         run: | 
-          docker run -d --rm --name react tomoya0517/react
-          echo "hello"
-          ls 
+          docker run -d --name react tomoya0517/react
+          docker logs react
